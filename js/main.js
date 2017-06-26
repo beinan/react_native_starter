@@ -25,7 +25,7 @@ export default class Main extends Component {
         </Content>
         <Footer>
           <FooterTab>
-            <Button full onPress={Actions.login}>
+            <Button full onPress={Actions.signin}>
               <Text>Footer</Text>
             </Button>
           </FooterTab>

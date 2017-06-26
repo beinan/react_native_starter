@@ -10,9 +10,13 @@ import { StatusBar, Platform } from 'react-native';
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 
 import { ApolloClient, ApolloProvider } from 'react-apollo';
+import { createNetworkInterface } from 'apollo-client';
+
 //import { todoReducer, userReducer } from './reducers';
 
-const client = new ApolloClient();
+const client = new ApolloClient({
+  networkInterface: createNetworkInterface({ uri: 'http://api.8gcool.com/graphql' }),
+});
 const store = createStore(
   combineReducers({
     //todos: todoReducer,
