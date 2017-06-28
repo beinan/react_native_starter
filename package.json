@@ -25,6 +25,7 @@
     "react": "16.0.0-alpha.6",
     "react-apollo": "^1.4.2",
     "react-native": "^0.44.0",
-    "react-native-router-flux": "^3.40.1"
+    "react-native-router-flux": "^3.40.1",
+    "react-native-vector-icons": "^4.2.0"
   }
 }
