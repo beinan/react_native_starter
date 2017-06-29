@@ -113,7 +113,7 @@ export default class Me extends Component {
 	      <Text>Home</Text>
             </Button>
 	    <Button>
-              <Icon name="md-contacts" />
+              <Icon name="md-contacts" onPress={Actions.Contacts} />
 	      <Text>Contacts</Text>
             </Button>
             <Button>

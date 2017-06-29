@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import {Scene, Router} from 'react-native-router-flux';
 import Home from './containers/home';
+import Contacts from './containers/contacts';
 import Me from './containers/me';
 import SignIn from './containers/signin';
 
@@ -12,6 +13,7 @@ export default class AppRouter extends Component {
       <Router hideNavBar={true}>
 	<Scene key="root">
 	  <Scene key="home" component={Home} />
+	  <Scene key="contacts" component={Contacts} />
 	  <Scene key="signin" component={SignIn} />
 	  <Scene key="me" component={Me} />
 	</Scene>

@@ -67,7 +67,7 @@ TensorFlow makes it much easier for the company’s engineers to translate new a
               <Icon name="home" />
 	      <Text>Home</Text>
             </Button>
-	    <Button>
+	    <Button onPress={Actions.contacts}>
               <Icon name="md-contacts" />
 	      <Text>Contacts</Text>
             </Button>
