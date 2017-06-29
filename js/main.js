@@ -10,23 +10,26 @@ export default class Main extends Component {
     return (
       <Container>
         <Header>
-          <Left>
-            <Button>
-              <Icon name='menu' />
-            </Button>
-          </Left>
           <Body>
-            <Title>Header</Title>
+            <Title>Home</Title>
           </Body>
-          <Right />
         </Header>
         <Content>
 	  <Text>AAA</Text>
         </Content>
         <Footer>
           <FooterTab>
-            <Button full onPress={Actions.signin}>
-              <Text>Footer</Text>
+            <Button active onPress={Actions.signin}>
+              <Icon name="home" />
+            </Button>
+	    <Button>
+              <Icon name="person" />
+            </Button>
+            <Button>
+              <Icon name="navigate" />
+            </Button>
+            <Button>
+              <Icon name="menu" />
             </Button>
           </FooterTab>
         </Footer>

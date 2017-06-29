@@ -14,6 +14,12 @@ import { createNetworkInterface } from 'apollo-client';
 
 //import { todoReducer, userReducer } from './reducers';
 
+//Customized theme
+import { StyleProvider } from 'native-base';
+import getTheme from '../native-base-theme/components';
+
+
+
 const client = new ApolloClient({
   networkInterface: createNetworkInterface({ uri: 'http://api.8gcool.com/graphql' }),
 });
@@ -59,7 +65,9 @@ export default class Setup extends Component {
 
     return (
       <ApolloProvider store={this.state.store} client={client}>
-	<Router />
+	<StyleProvider style={getTheme()}>
+	  <Router />
+	</StyleProvider>
       </ApolloProvider>
     );
   }
