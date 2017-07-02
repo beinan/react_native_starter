@@ -65,9 +65,9 @@ export default class Setup extends Component {
 
     return (
       <ApolloProvider store={this.state.store} client={client}>
-	<StyleProvider style={getTheme()}>
-	  <Router />
-	</StyleProvider>
+        <StyleProvider style={getTheme()}>
+          <Router />
+        </StyleProvider>
       </ApolloProvider>
     );
   }

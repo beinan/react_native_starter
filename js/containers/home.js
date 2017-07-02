@@ -12,22 +12,22 @@ export default class Main extends Component {
     return (
       <Container>
         <Header>
-	  <Left>
-	    <Thumbnail small source={require('../../images/avatar0.jpg')} />
-	  </Left>
-	  <Body>
-	    <Title>Home</Title>
-	  </Body>
-	  <Right>
-	    <Button transparent>
-	      <Icon name='search' />
-	    </Button>
-	  </Right>
+          <Left>
+            <Thumbnail small source={require('../../images/avatar0.jpg')} />
+          </Left>
+          <Body>
+            <Title>Home</Title>
+          </Body>
+          <Right>
+            <Button transparent>
+              <Icon name='search' />
+            </Button>
+          </Right>
         </Header>
-	
+        
         <Content>
 
-	  <Card style={{flex: 0}}>
+          <Card style={{flex: 0}}>
             <CardItem>
               <Left>
                 <Thumbnail source={require('../../images/avatar0.jpg')} />
@@ -61,23 +61,23 @@ TensorFlow makes it much easier for the company’s engineers to translate new a
         
         </Content>
 
-	<Footer>
+        <Footer>
           <FooterTab>
             <Button active onPress={Actions.home}>
               <Icon name="home" />
-	      <Text>Home</Text>
+              <Text>Home</Text>
             </Button>
-	    <Button onPress={Actions.contacts}>
+            <Button onPress={Actions.contacts}>
               <Icon name="md-contacts" />
-	      <Text>Contacts</Text>
+              <Text>Contacts</Text>
             </Button>
             <Button>
               <Icon name="md-qr-scanner" />
-	      <Text>Discover</Text>
+              <Text>Discover</Text>
             </Button>
             <Button onPress={Actions.me}>
               <Icon name="person" />
-	      <Text>Me</Text>
+              <Text>Me</Text>
             </Button>
           </FooterTab>
         </Footer>

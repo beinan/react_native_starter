@@ -11,12 +11,12 @@ export default class AppRouter extends Component {
   render() {
     return (
       <Router hideNavBar={true}>
-	<Scene key="root">
-	  <Scene key="home" component={Home} />
-	  <Scene key="contacts" component={Contacts} />
-	  <Scene key="signin" component={SignIn} />
-	  <Scene key="me" component={Me} />
-	</Scene>
+        <Scene key="root">
+          <Scene key="home" component={Home} />
+          <Scene key="contacts" component={Contacts} />
+          <Scene key="signin" component={SignIn} />
+          <Scene key="me" component={Me} />
+        </Scene>
       </Router>
     )
   }

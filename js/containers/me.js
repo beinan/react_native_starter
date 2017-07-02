@@ -9,38 +9,38 @@ export default class Me extends Component {
   render() {
     return (
       <Container>
-	<Header>
-	  <Left>
-	    <Button transparent onPress={() => Actions.pop()}>
-	      <Icon name="arrow-back" />
-	    </Button>
-	  </Left>
-	  <Body>
-	    <Title>Me</Title>
-	  </Body>
-	  <Right />
-	</Header>
+        <Header>
+          <Left>
+            <Button transparent onPress={() => Actions.pop()}>
+              <Icon name="arrow-back" />
+            </Button>
+          </Left>
+          <Body>
+            <Title>Me</Title>
+          </Body>
+          <Right />
+        </Header>
 
         <Content>
-	  
-	  <Separator />
-	  <List>
+          
+          <Separator />
+          <List>
             <ListItem>
               <Thumbnail square size={80} source={require('../../images/avatar0.jpg')} />
               <Body>
                 <Text>Beinan</Text>
                 <Text note>Its time to build a difference . .</Text>
               </Body>
-	      <Right>
-		<Button transparent>
-		  <Icon name="md-qr-scanner" style={{color:'black'}}/>
-		</Button>  
-	      </Right>
+              <Right>
+                <Button transparent>
+                  <Icon name="md-qr-scanner" style={{color:'black'}}/>
+                </Button>  
+              </Right>
             </ListItem>
           </List>
 
-	  <Separator bordered />
-	  <List>
+          <Separator bordered />
+          <List>
             <ListItem icon>
               <Left>
                 <Icon name="settings" style={{color: 'gray'}}/>
@@ -50,10 +50,10 @@ export default class Me extends Component {
               </Body>
               <Right />
             </ListItem>
-	  </List>
-	  
-	  <Separator bordered />           
-	  <List>
+          </List>
+          
+          <Separator bordered />           
+          <List>
             <ListItem icon>
               <Left>
                 <Icon name="plane" style={{color: 'red'}}/>
@@ -63,7 +63,7 @@ export default class Me extends Component {
               </Body>
               <Right />
             </ListItem>
-	    <ListItem icon>
+            <ListItem icon>
               <Left>
                 <Icon name="notifications" style={{color: 'blue'}}/>
               </Left>
@@ -71,8 +71,8 @@ export default class Me extends Component {
                 <Text>Notifications</Text>
               </Body>
               <Right />
-            </ListItem>	    
-	    <ListItem icon>
+            </ListItem>     
+            <ListItem icon>
               <Left>
                 <Icon name="albums" style={{color: 'green'}}/>
               </Left>
@@ -81,7 +81,7 @@ export default class Me extends Component {
               </Body>
               <Right />
             </ListItem>
-	    <ListItem icon>
+            <ListItem icon>
               <Left>
                 <Icon name="logo-youtube" style={{color: 'red'}}/>
               </Left>
@@ -90,10 +90,10 @@ export default class Me extends Component {
               </Body>
               <Right />
             </ListItem>
-	  </List>
+          </List>
 
-	  <Separator />
-	  <List>
+          <Separator />
+          <List>
             <ListItem icon>
               <Left>
                 <Icon name="restaurant" style={{color: 'orange'}}/>
@@ -103,26 +103,26 @@ export default class Me extends Component {
               </Body>
               <Right />
             </ListItem>
-	  </List>
-	  
+          </List>
+          
         </Content>
         <Footer>
           <FooterTab>
             <Button onPress={Actions.signin}>
               <Icon name="home" />
-	      <Text>Home</Text>
+              <Text>Home</Text>
             </Button>
-	    <Button>
+            <Button>
               <Icon name="md-contacts" onPress={Actions.Contacts} />
-	      <Text>Contacts</Text>
+              <Text>Contacts</Text>
             </Button>
             <Button>
               <Icon name="md-qr-scanner" />
-	      <Text>Discover</Text>
+              <Text>Discover</Text>
             </Button>
             <Button active>
               <Icon name="person" />
-	      <Text>Me</Text>
+              <Text>Me</Text>
             </Button>
           </FooterTab>
         </Footer>
