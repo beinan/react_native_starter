@@ -108,7 +108,7 @@ export default class Me extends Component {
         </Content>
         <Footer>
           <FooterTab>
-            <Button onPress={Actions.signin}>
+            <Button onPress={Actions.home}>
               <Icon name="home" />
               <Text>Home</Text>
             </Button>

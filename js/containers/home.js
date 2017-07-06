@@ -32,7 +32,7 @@ export default class Main extends Component {
               <Left>
                 <Thumbnail source={require('../../images/avatar0.jpg')} />
                 <Body>
-                  <Text>NativeBase</Text>
+                  <Text>Beinan</Text>
                   <Text note>April 15, 2016</Text>
                 </Body>
               </Left>
